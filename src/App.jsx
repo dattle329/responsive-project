@@ -22,7 +22,7 @@ function App() {
         <div className='toggle'>
         <button onClick={toggleDropdown}><i className="bi bi-list"></i></button>
         <ul style={{ display: isDropdownOpen ? 'block' : 'none' }}>
-        <li><a href="">Home</a></li>
+        <li><a href="">Homehjvvhjvhj</a></li>
             <li><a href="">About Us</a></li>
             <li><a href="">Our Service</a></li>
             <li><a href="">Case Study</a></li>
