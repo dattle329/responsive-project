@@ -2,6 +2,11 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
 
   return (
     <div className="container">
@@ -15,9 +20,9 @@ function App() {
           <li><a href="">Career</a></li>
         </ul>
         <div className='toggle'>
-          <i class="bi bi-list"></i>
-          <ul>
-            <li><a href="">Home</a></li>
+        <button onClick={toggleDropdown}><i className="bi bi-list"></i></button>
+        <ul style={{ display: isDropdownOpen ? 'block' : 'none' }}>
+        <li><a href="">Home</a></li>
             <li><a href="">About Us</a></li>
             <li><a href="">Our Service</a></li>
             <li><a href="">Case Study</a></li>

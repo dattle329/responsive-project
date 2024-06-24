@@ -21,6 +21,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0px 180px;
+  position: relative;
 }
 
 .container a img {
@@ -52,20 +53,29 @@
   /* font-size: 1.25rem; */
 }
 
-.container .toggle:active ul {
+.container .toggle button{
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  color: red;
+}
+
+.container .toggle button:active ul {
   display: flex;
   flex-direction: column;
+  color: rgb(82, 82, 170);
 }
 
 .container .toggle ul{
-  /* display: none; */
+  display: none;
+  /* flex-direction: column; */
   position: absolute;
-  top: 0px;
+  width: 100%;
+  z-index: 999;
   left: 0;
-  background-color: rgb(34, 36, 52);
-  /* overflow: 1; */
-  /* display: flex;
-  flex-direction: column; */
+  top: 100%;
+  background-color: rgb(153, 89, 60);
+  overflow: 1;
 }
 
 .container .toggle ul li a{
