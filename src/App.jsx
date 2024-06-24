@@ -13,7 +13,7 @@ function App() {
       <header>
         <a href="#"><img src="src\assets\img\Dmission.png" alt="" /></a>
         <ul>
-          <li><a href="">Homiee1111</a></li>
+          <li><a href="">Homiee11aaa11</a></li>
           <li><a href="">About Us</a></li>
           <li><a href="">Our Service</a></li>
           <li><a href="">Case Study</a></li>
